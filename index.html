@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0, width=device-width">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <script>
+
+          document.addEventListener('DOMContentLoaded', function() {
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+              if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50)
+              {
+                document.getElementById("logocontainer").style.width = "120px";
+                document.getElementById("pageheader").style.height = "85px";
+                document.getElementById("pageheader").style.marginBottom = "0";
+                document.getElementById("arrowdown").style.display = "block";
+                document.querySelector("#arrowup").style.display = "none";
+              }
+              else
+              {
+                document.getElementById("logocontainer").style.width = "211px";
+                document.getElementById("pageheader").style.height = "200px";
+                document.getElementById("pageheader").style.marginBottom = "12px";
+                document.getElementById("arrowdown").style.display = "none";
+              }
+            }
+
+            document.querySelector("#arrowdown").addEventListener('click', function(e) {
+              e.preventDefault();
+              document.getElementById("pageheader").style.height = "156px";
+              document.querySelector("#arrowdown").style.display = "none";
+              document.querySelector("#arrowup").style.display = "block";
+            })
+
+            document.querySelector("#arrowup").addEventListener('click', function(e) {
+              e.preventDefault();
+              document.getElementById("pageheader").style.height = "85px";
+              document.querySelector("#arrowdown").style.display = "block";
+              document.querySelector("#arrowup").style.display = "none";
+            })
+
+          });
+
+        </script>
+        <title>My Webpage</title>
+    </head>
+    <body>
+      <div id="glitchy">
+        <header id="pageheader">
+            <span id="arrowup"></span>
+            <span id="arrowdown"></span>
+          <div id="logocontainer">
+              <img src="./images/Pset8-hp-logo.png" alt="logo" class="img-fluid">
+          </div>
+          <hr>
+          <nav class="buttonposition">
+              <a href="index.html" class="headerbuttons">HOME</a>
+              <a href="furniture.html" class="headerbuttons">DECOR</a>
+              <a href="paint.html" class="headerbuttons">PAINT</a>
+              <a href="interiordesign.html" class="headerbuttons">DESIGN</a>
+          </nav>
+        </header>
+      </div>
+        <section class="picturecontainer">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/Sisley-Sofa-by-Kincaid.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Home</h5>
+                      <p>Your one stop shop for home design and decor.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/living-room.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Decor</h5>
+                      <p>Make your home feel a little more like home.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/Painting-Your-House-scaled.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Paint</h5>
+                      <p>Add some exciting colors to your home.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/interiordesigner.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Interior design</h5>
+                      <p>Let our pros help you make your dream home.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section class="container">
+          <div id="indexsalecontainer">
+            <h3 id="indexsale">SALES</h3>
+          </div>
+          <div class=" productgrid">
+            <div class="product">
+                <img src="products/Blair-Velvet-Accent-Chair.webp" class="img-fluid">
+                <div class="producttextbox">
+                    <h4 class="producttext">Blair velvet Accent Chair</h4>
+                    <div class="salecontainer">
+                        <div class="sale">Sale</div>
+                        <p  class="oldprice">$649.00</p>
+                    </div>
+                    <div class="percentcontainer">
+                        <div class="percentoff">-50%</div>
+                        <p>$324.50</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="products/alden.webp" class="img-fluid productimage">
+                <div class="producttextbox">
+                    <h4 class="producttext">Alden 5 Piece Sectional</h4>
+                    <div class="salecontainer">
+                        <div class="sale">Sale</div>
+                        <p class="oldprice">$3,135.00</p>
+                    </div>
+                    <div class="percentcontainer">
+                        <div class="percentoff">-50%</div>
+                        <p>$1,567.50</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="products/Beckham-Straw-Sofa-with-a-Chaise.webp" class="img-fluid">
+                <div class="producttextbox">
+                    <h4 class="producttext">Beckham Straw Sofa with a Chaise</h4>
+                    <div class="salecontainer">
+                        <div class="sale">Sale</div>
+                        <p class="oldprice">$3167.00</p>
+                    </div>
+                    <div class="percentcontainer">
+                        <div class="percentoff">-50%</div>
+                        <p>$1,583.00</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </section>
+        <footer class="footer1">
+          <div class="fcgrid">
+            <div class="flicontainer">
+              <div class="flcontainer">
+                <img src="./images/Pset8-hp-logo.png" alt="logo" class="img-fluid logo">
+              </div>
+              <div class="firowcontainer">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                  <div class="ficontainer">
+                      <img src="footer-icons/facebook-icon.png" alt="logo" class="img-fluid logo">
+                  </div>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                  <div class="ficontainer">
+                      <img src="footer-icons/instagram-icon.png" alt="logo" class="img-fluid logo">
+                  </div>
+                </a>
+                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                  <div class="ficontainer">
+                      <img src="footer-icons/twitter-icon.png" alt="logo" class="img-fluid logo">
+                  </div>
+                </a>
+              </div>
+            </div>
+            <nav>
+              <ul class="footergrid">
+                <li class="licenter"><a href="index.html" class="footerbuttons">HOME</a></li>
+                <li class="licenter"><a href="furniture.html" class="footerbuttons">DECOR</a></li>
+                <li class="licenter"><a href="paint.html" class="footerbuttons">PAINT</a></li>
+                <li class="licenter"><a href="interiordesign.html" class="footerbuttons">DESIGN</a></li>
+              </ul>
+            </nav>
+            <nav>
+              <ul class="footergrid">
+                <li class="footerbuttons licenter">NEWSLETTER<span class=" linktiptext">Link goes here.</span></li>
+                <li class="footerbuttons licenter">CONTACT US<span class=" linktiptext">Link goes here.</span></li>
+              </ul>
+            </nav>
+          </div>
+        </footer>
+        <footer class="footer2">Copyright &#169; HOME D&D 2023. All rights reserved.</footer>
+    </body>
+</html>

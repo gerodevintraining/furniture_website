@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <script>
+
+            document.addEventListener('DOMContentLoaded', function() {
+
+                window.onscroll = function() {scrollFunction()};
+
+                function scrollFunction() {
+                if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50)
+                {
+                    document.getElementById("logocontainer").style.width = "120px";
+                    document.getElementById("pageheader").style.height = "85px";
+                    document.getElementById("pageheader").style.marginBottom = "0";
+                    document.getElementById("arrowdown").style.display = "block";
+                    document.querySelector("#arrowup").style.display = "none";
+                }
+                else
+                {
+                    document.getElementById("logocontainer").style.width = "211px";
+                    document.getElementById("pageheader").style.height = "200px";
+                    document.getElementById("pageheader").style.marginBottom = "12px";
+                    document.getElementById("arrowdown").style.display = "none";
+                }
+                }
+
+                document.querySelector("#arrowdown").addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.getElementById("pageheader").style.height = "156px";
+                    document.querySelector("#arrowdown").style.display = "none";
+                    document.querySelector("#arrowup").style.display = "block";
+                });
+
+                document.querySelector("#arrowup").addEventListener('click', function(e) {
+                e.preventDefault();
+                    document.getElementById("pageheader").style.height = "85px";
+                    document.querySelector("#arrowdown").style.display = "block";
+                    document.querySelector("#arrowup").style.display = "none";
+                });
+
+                let body = document.querySelector('#paintbody');
+                let logo = document.querySelector('#logocontainer img');
+                let button = document.querySelectorAll('.headerbuttons');
+                let line = document.querySelector('hr');
+                let seclabel = document.querySelector('h3');
+                let header = document.querySelector('#pageheader');
+
+                document.querySelector('#paintbutton1').addEventListener('click', function() {
+                    body.style.backgroundColor = '#f7f8f2';
+                    header.style.backgroundColor = '#f7f8f2';
+                    logo.style.filter = 'invert(0)';
+                    line.style.color = 'black';
+                    seclabel.style.color = 'black';
+                    document.getElementById("arrowdown").style.borderColor = "black";
+                    document.querySelector("#arrowup").style.borderColor = "black";
+                    for (let i = 0; i < button.length; i++)
+                    {
+                        button[i].style.color = ''
+                    }
+
+                });
+                document.querySelector('#paintbutton2').addEventListener('click', function() {
+                    body.style.backgroundColor = '#bab7b4';
+                    header.style.backgroundColor = '#bab7b4';
+                    logo.style.filter = 'invert(0)';
+                    line.style.color = 'black';
+                    seclabel.style.color = 'black';
+                    document.getElementById("arrowdown").style.borderColor = "black";
+                    document.querySelector("#arrowup").style.borderColor = "black";
+                    for (let i = 0; i < button.length; i++)
+                    {
+                        button[i].style.color = ''
+                    }
+                });
+                document.querySelector('#paintbutton3').addEventListener('click', function() {
+                    body.style.backgroundColor = '#010101';
+                    header.style.backgroundColor = '#010101';
+                    logo.style.filter = 'invert(1)';
+                    line.style.color = 'white';
+                    seclabel.style.color = 'white';
+                    document.getElementById("arrowdown").style.borderColor = "white";
+                    document.querySelector("#arrowup").style.borderColor = "white";
+                    for (let i = 0; i < button.length; i++)
+                    {
+                        button[i].style.color = '#fff'
+                    }
+                });
+                document.querySelector('#paintbutton4').addEventListener('click', function() {
+                    body.style.backgroundColor = '#bed3cf';
+                    header.style.backgroundColor = '#bed3cf';
+                    logo.style.filter = 'invert(0)';
+                    line.style.color = 'black';
+                    seclabel.style.color = 'black';
+                    document.getElementById("arrowdown").style.borderColor = "black";
+                    document.querySelector("#arrowup").style.borderColor = "black";
+                    for (let i = 0; i < button.length; i++)
+                    {
+                        button[i].style.color = ''
+                    }
+                });
+                document.querySelector('#paintbutton5').addEventListener('click', function() {
+                    body.style.backgroundColor = '#3059a5';
+                    header.style.backgroundColor = '#3059a5';
+                    logo.style.filter = 'invert(1)';
+                    line.style.color = 'white';
+                    seclabel.style.color = 'white';
+                    document.getElementById("arrowdown").style.borderColor = "white";
+                    document.querySelector("#arrowup").style.borderColor = "white";
+                    for (let i = 0; i < button.length; i++)
+                    {
+                        button[i].style.color = '#fff'
+                    }
+                });
+                document.querySelector('#paintbutton6').addEventListener('click', function() {
+                    body.style.backgroundColor = '#83bc5b';
+                    header.style.backgroundColor = '#83bc5b';
+                    logo.style.filter = 'invert(1)';
+                    line.style.color = 'white';
+                    seclabel.style.color = 'white';
+                    document.getElementById("arrowdown").style.borderColor = "white";
+                    document.querySelector("#arrowup").style.borderColor = "white";
+                    for (let i = 0; i < button.length; i++)
+                    {
+                        button[i].style.color = '#fff'
+                    }
+                });
+                document.querySelector('#paintbutton7').addEventListener('click', function() {
+                    body.style.backgroundColor = '#a0aa4b';
+                    header.style.backgroundColor = '#a0aa4b';
+                    logo.style.filter = 'invert(1)';
+                    line.style.color = 'white';
+                    seclabel.style.color = 'white';
+                    document.getElementById("arrowdown").style.borderColor = "white";
+                    document.querySelector("#arrowup").style.borderColor = "white";
+                    for (let i = 0; i < button.length; i++)
+                    {
+                        button[i].style.color = '#fff'
+                    }
+                });
+                document.querySelector('#paintbutton8').addEventListener('click', function() {
+                    body.style.backgroundColor = '#fcf181';
+                    header.style.backgroundColor = '#fcf181';
+                    logo.style.filter = 'invert(0)';
+                    line.style.color = 'black';
+                    seclabel.style.color = 'black';
+                    document.getElementById("arrowdown").style.borderColor = "black";
+                    document.querySelector("#arrowup").style.borderColor = "black";
+                    for (let i = 0; i < button.length; i++)
+                    {
+                        button[i].style.color = ''
+                    }
+                });
+                document.querySelector('#paintbutton9').addEventListener('click', function() {
+                    body.style.backgroundColor = '#f7d047';
+                    header.style.backgroundColor = '#f7d047';
+                    logo.style.filter = 'invert(0)';
+                    line.style.color = 'black';
+                    seclabel.style.color = 'black';
+                    document.getElementById("arrowdown").style.borderColor = "black";
+                    document.querySelector("#arrowup").style.borderColor = "black";
+                    for (let i = 0; i < button.length; i++)
+                    {
+                        button[i].style.color = ''
+                    }
+                });
+                document.querySelector('#paintbutton10').addEventListener('click', function() {
+                    body.style.backgroundColor = '#bc704a';
+                    header.style.backgroundColor = '#bc704a';
+                    logo.style.filter = 'invert(1)';
+                    line.style.color = 'white';
+                    seclabel.style.color = 'white';
+                    document.getElementById("arrowdown").style.borderColor = "white";
+                    document.querySelector("#arrowup").style.borderColor = "white";
+                    for (let i = 0; i < button.length; i++)
+                    {
+                        button[i].style.color = '#fff'
+                    }
+                });
+                document.querySelector('#paintbutton11').addEventListener('click', function() {
+                    body.style.backgroundColor = '#dc7575';
+                    header.style.backgroundColor = '#dc7575';
+                    logo.style.filter = 'invert(1)';
+                    line.style.color = 'white';
+                    seclabel.style.color = 'white';
+                    document.getElementById("arrowdown").style.borderColor = "white";
+                    document.querySelector("#arrowup").style.borderColor = "white";
+                    for (let i = 0; i < button.length; i++)
+                    {
+                        button[i].style.color = '#fff'
+                    }
+                });
+                document.querySelector('#paintbutton12').addEventListener('click', function() {
+                    body.style.backgroundColor = '#e5c4cb';
+                    header.style.backgroundColor = '#e5c4cb';
+                    logo.style.filter = 'invert(1)';
+                    line.style.color = 'white';
+                    seclabel.style.color = 'white';
+                    document.getElementById("arrowdown").style.borderColor = "white";
+                    document.querySelector("#arrowup").style.borderColor = "white";
+                    for (let i = 0; i < button.length; i++)
+                    {
+                        button[i].style.color = '#fff'
+                    }
+                });
+                document.querySelector('#paintbutton13').addEventListener('click', function() {
+                    body.style.backgroundColor = '#a64477';
+                    header.style.backgroundColor = '#a64477';
+                    logo.style.filter = 'invert(1)';
+                    line.style.color = 'white';
+                    seclabel.style.color = 'white';
+                    document.getElementById("arrowdown").style.borderColor = "white";
+                    document.querySelector("#arrowup").style.borderColor = "white";
+                    for (let i = 0; i < button.length; i++)
+                    {
+                        button[i].style.color = '#fff'
+                    }
+                });
+                document.querySelector('#paintbutton14').addEventListener('click', function() {
+                    body.style.backgroundColor = '#594b94';
+                    header.style.backgroundColor = '#594b94';
+                    logo.style.filter = 'invert(1)';
+                    line.style.color = 'white';
+                    seclabel.style.color = 'white';
+                    document.getElementById("arrowdown").style.borderColor = "white";
+                    document.querySelector("#arrowup").style.borderColor = "white";
+                    for (let i = 0; i < button.length; i++)
+                    {
+                        button[i].style.color = '#fff'
+                    }
+                });
+                document.querySelector('#paintbutton15').addEventListener('click', function() {
+                    body.style.backgroundColor = '#772f41';
+                    header.style.backgroundColor = '#772f41';
+                    logo.style.filter = 'invert(1)';
+                    line.style.color = 'white';
+                    seclabel.style.color = 'white';
+                    document.getElementById("arrowdown").style.borderColor = "white";
+                    document.querySelector("#arrowup").style.borderColor = "white";
+                    for (let i = 0; i < button.length; i++)
+                    {
+                        button[i].style.color = '#fff'
+                    }
+                });
+                document.querySelector('#paintbutton16').addEventListener('click', function() {
+                    body.style.backgroundColor = '#3b2646';
+                    header.style.backgroundColor = '#3b2646';
+                    logo.style.filter = 'invert(1)';
+                    line.style.color = 'white';
+                    seclabel.style.color = 'white';
+                    document.getElementById("arrowdown").style.borderColor = "white";
+                    document.querySelector("#arrowup").style.borderColor = "white";
+                    for (let i = 0; i < button.length; i++)
+                    {
+                        button[i].style.color = '#fff'
+                    }
+                });
+            });
+        </script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+    <body id="paintbody">
+        <div id="glitchy">
+            <header id="pageheader">
+              <span id="arrowup"></span>
+              <span id="arrowdown"></span>
+              <div id="logocontainer">
+                  <img src="./images/Pset8-hp-logo.png" alt="logo" class="img-fluid">
+              </div>
+              <hr>
+              <nav class="buttonposition">
+                  <a href="index.html" class="headerbuttons">HOME</a>
+                  <a href="furniture.html" class="headerbuttons">DECOR</a>
+                  <a href="paint.html" class="headerbuttons">PAINT</a>
+                  <a href="interiordesign.html" class="headerbuttons">DESIGN</a>
+              </nav>
+            </header>
+          </div>
+        <section class="picturecontainer">
+            <div class="transtext"><p>Add some exciting<br>colors to your home.</p><br></div>
+            <img src="./images/Painting-Your-House-scaled.jpeg" class="img-fluid" alt="People painting together">
+        </section>
+        <section class="container">
+            <h3 class="sectionlabel">AVAILABLE COLORS</h3>
+            <div class="paintgrid">
+                <button id="paintbutton1">
+                    <div class="paint">
+                        <div id="coloroption1"></div>
+                        <h4 class="producttext">Da'vid</h4>
+                    </div>
+                </button>
+                <button id="paintbutton2">
+                    <div class="paint">
+                        <div id="coloroption2"></div>
+                        <h4 class="producttext">Don's Wash</h4>
+                    </div>
+                </button>
+                <button id="paintbutton3">
+                    <div class="paint">
+                        <div id="coloroption3"></div>
+                        <h4 class="producttext">Matt Black</h4>
+                    </div>
+                </button>
+                <button id="paintbutton4">
+                    <div class="paint">
+                        <div id="coloroption4"></div>
+                        <h4 class="producttext">Savvy Steffie</h4>
+                    </div>
+                </button>
+                <button id="paintbutton5">
+                    <div class="paint">
+                        <div id="coloroption5"></div>
+                        <h4 class="producttext">Bob's Blue</h4>
+                    </div>
+                </button>
+                <button id="paintbutton6">
+                    <div class="paint">
+                        <div id="coloroption6"></div>
+                        <h4 class="producttext">Andi's Delight</h4>
+                    </div>
+                </button>
+                <button id="paintbutton7">
+                    <div class="paint">
+                        <div id="coloroption7"></div>
+                        <h4 class="producttext">Asgat</h4>
+                    </div>
+                </button>
+                <button id="paintbutton8">
+                    <div class="paint">
+                        <div id="coloroption8"></div>
+                        <h4 class="producttext">Bright</h4>
+                    </div>
+                </button>
+                <button id="paintbutton9">
+                    <div class="paint">
+                        <div id="coloroption9"></div>
+                        <h4 class="producttext">John's Joy</h4>
+                    </div>
+                </button>
+                <button id="paintbutton10">
+                    <div class="paint">
+                        <div id="coloroption10"></div>
+                        <h4 class="producttext">July</h4>
+                    </div>
+                </button>
+                <button id="paintbutton11">
+                    <div class="paint">
+                        <div id="coloroption11"></div>
+                        <h4 class="producttext">Holiday's Coral</h4>
+                    </div>
+                </button>
+                <button id="paintbutton12">
+                    <div class="paint">
+                        <div id="coloroption12"></div>
+                        <h4 class="producttext">Sweetness</h4>
+                    </div>
+                </button>
+                <button id="paintbutton13">
+                    <div class="paint">
+                        <div id="coloroption13"></div>
+                        <h4 class="producttext">Tinkie's Treat</h4>
+                    </div>
+                </button>
+                <button id="paintbutton14">
+                    <div class="paint">
+                        <div id="coloroption14"></div>
+                        <h4 class="producttext">Kylee's Candy</h4>
+                    </div>
+                </button>
+                <button id="paintbutton15">
+                    <div class="paint">
+                        <div id="coloroption15"></div>
+                        <h4 class="producttext">Karema</h4>
+                    </div>
+                </button>
+                <button id="paintbutton16">
+                    <div class="paint">
+                        <div id="coloroption16"></div>
+                        <h4 class="producttext">Amon's Aubergine</h4>
+                    </div>
+                </button>
+            </div>
+        </section>
+        <footer class="footer1">
+            <div class="fcgrid">
+              <div class="flicontainer">
+                <div class="flcontainer">
+                  <img src="./images/Pset8-hp-logo.png" alt="logo" class="img-fluid logo">
+                </div>
+                <div class="firowcontainer">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <div class="ficontainer">
+                            <img src="footer-icons/facebook-icon.png" alt="logo" class="img-fluid logo">
+                        </div>
+                      </a>
+                      <a href="https://www.instagram.com/" target="_blank">
+                        <div class="ficontainer">
+                            <img src="footer-icons/instagram-icon.png" alt="logo" class="img-fluid logo">
+                        </div>
+                      </a>
+                      <a href="https://twitter.com/" target="_blank">
+                        <div class="ficontainer">
+                            <img src="footer-icons/twitter-icon.png" alt="logo" class="img-fluid logo">
+                        </div>
+                      </a>
+                </div>
+              </div>
+              <nav>
+                <ul class="footergrid">
+                  <li class="licenter"><a href="index.html" class="footerbuttons">HOME</a></li>
+                  <li class="licenter"><a href="furniture.html" class="footerbuttons">DECOR</a></li>
+                  <li class="licenter"><a href="paint.html" class="footerbuttons">PAINT</a></li>
+                  <li class="licenter"><a href="interiordesign.html" class="footerbuttons">DESIGN</a></li>
+                </ul>
+              </nav>
+              <nav>
+                <ul class="footergrid">
+                  <li class="footerbuttons licenter">NEWSLETTER<span class=" linktiptext">Link goes here.</span></li>
+                  <li class="footerbuttons licenter">CONTACT US<span class=" linktiptext">Link goes here.</span></li>
+                </ul>
+              </nav>
+            </div>
+          </footer>
+          <footer class="footer2">Copyright &#169; HOME D&D 2023. All rights reserved.</footer>
+    </body>
+</html>
